@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="imagem/png" href="img/cristalIcone.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,600,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cristal Consórcio</title>
+    <script>
+        window.addEventListener("load", verificarTamanho);
+        window.addEventListener("resize", verificarTamanho);
+        function verificarTamanho(){
+            var botaoReferencia = document.getElementsByClassName("btn-outline-light");
+            var tamanhoViewport = window.innerWidth;
+            if(tamanhoViewport > 1919){
+                for(var i = 0; i < botaoReferencia.length; i++){
+                    botaoReferencia[i].setAttribute("class", "btn btn-outline-light btn-lg botoesHome");
+                }
+            }else{
+                for(var i = 0; i < botaoReferencia.length; i++){
+                    botaoReferencia[i].setAttribute("class", "btn btn-outline-light btn-md botoesHome");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img class="navbar-brand" src="img/Cristal2Preta.png" alt="" id="logoCristal">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="index.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" id="item" href="cartasDeImoveis.html">Cartas de ímoveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="cartasDeAutomoveis.html">Cartas de automóveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="vendaSuaCota.html">Venda sua carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="faq.html">Perguntas Frequentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="sobreNos.html">Sobre Nós</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="sessao1">
+        
+<div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1>VOCÊ ESTÁ PROCURANDO AS <span>MENORES TAXAS</span> DO MERCADO??</h1>
+                <h3>ACHOU !</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h5>ENTRE EM CONTATO AGORA MESMO E<span> COMPARE NOSSAS TAXAS!!!</span></h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3">
+                <a href="cartasDeImoveis.html">
+                    <button class="btn btn-outline-light btn-md botoesHome">Tabela De Imóveis</button>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="cartasDeAutomoveis.html">
+                    <button class=" btn btn-outline-light btn-md botoesHome">Tabela De Automóveis</button>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a href="vendaSuaCota.html">
+                    <button class="btn btn-outline-light btn-md botoesHome">Vender Sua Carta</button>
+                </a>
+            </div>
+        </div>
+        <div class="row text-center">
+
+            <div class="col-md-12">
+                <span id="resalva1" class="">Compramos cartas contempladas ou não, <span> À VISTA </span></span>
+                <span id="resalva2">Para maiores esclarecimentos, envie seus telefones para contato (<a
+                        href="VendaSuaCota.html">POR AQUI</a>)</span>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+<section class="sessao2">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1 class="sobreNos">SOBRE NÓS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="img/quemSomosIcone.png" class="icone">
+                <hr class="hrTelaGrande">
+                
+                <h3 class="quem">QUEM SOMOS?</h3>
+                <h5>A empresa de cotas de consórcio que leva em conta a satisfação do cliente e seu custo X
+                    benefício</h5>
+                <hr class="hrTelaPequena">
+            </div>
+            <div class="col-lg-3 text-center">
+                <img src="img/casaIcone.png" class="icone">
+                <hr class="hrTelaGrande">
+                <h3>ENDEREÇO</h3>
+                <h5>SCS QUADRA 1 BLOCO L Nº 17 ED. MÁRCIA SALAS 207-208 - Asa Sul, Brasília - DF</h5>
+                <hr class="hrTelaPequena">
+            </div>
+            <div class="col-lg-3 text-center">
+                <img src="img/experienciaIcone.png" class="icone">
+                <hr class="hrTelaGrande">
+                <h3>EXPERIÊNCIA</h3>
+                <h5>A cristal está no mercado a mais de 20 Anos, intermediando sonhos e conquistas.</h5>
+                <hr class="hrTelaPequena">
+            </div>
+            <div class="col-lg-3">
+                <div class="text-center">
+                    <img src="img/telefoneIcone.png" class="icone" alt="">
+                </div>
+                <hr class="hrTelaGrande">
+                <h3 class="text-center">CONTATOS</h3>
+                <h1 id="contatos">
+                    <div class="text-center"><img src="img/whatsapp-logo-1.png" class="logoWhats">
+                        <span class="spanWhats">Whatsapp:</span> <span>(XX) XXXXX XXXX</span> <br> </div>
+                        <hr id="hrContatos">
+                        <div class="divFone text-center"><img src="img/fone.png" class="logoTelefone">
+                        
+                        <span class="spanFone">Telefones e Celulares:</span> <span class="dados"> 61 3328-3000 (Fixo)<br> 61 9981 - 1117  / Valdemir Amaral<br> 61 98134 - 9393 / Joao carlos barbosa</span></div>
+                        <hr id="hrContatos">
+                    <div class="divEmail text-center"><img src="img/email.png" class="logoEmail">
+                        <span class="spanEmail">Email:</span> <span> cristalconsorcios@gmail.com</span></div>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="sessao3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="mapa" src="img/google_maps.jpg" alt="">
+            </div>
+            <div class="col-md-6 mt-3">
+
+                <h2 class="text-center">Entre em contato</h2>
+                <div>
+                    <p class="text-center">Entre em contato pelo WhatApp</p>
+                    <button class="btn btn-success mb-2" id="btnWhats">WhatApp</button>
+                </div>
+
+                <p class="text-center">ou <br>Mande seu telefone para entrarmos em contato</p>
+                <form class="mx-auto" action="">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Nome e Telefone(s)">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btnEnviar">Enviar Mensagem</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <img src="img/seta.png" id="seta">
+    <footer class="bg-dark" id="footer">
+        <div class="text-center">
+            Cristal Consórcios
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/pooper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scriptHome.js"></script>
+
+</body>
+
+</html>

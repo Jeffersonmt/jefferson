@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="icon" type="imagem/png" href="img/cristalIcone.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Cartas de Imóvel</title>
+    <script>
+        window.addEventListener("load", verificarTamanho);
+        window.addEventListener("resize", verificarTamanho);
+        function verificarTamanho(){
+            var cardReferencia = document.getElementsByClassName("card");
+            var tamanhoViewport = window.innerWidth;
+            if(tamanhoViewport >= 1366){
+                
+                    cardReferencia[0].style.width="70%";
+                
+            }else{
+                
+                cardReferencia[0].style.width="100%";
+                
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img class="navbar-brand" src="img/Cristal2Preta.png" alt="" id="logoCristal">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="index.html">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" id="item" href="cartasDeImoveis.html">Cartas de ímoveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="cartasDeAutomoveis.html">Cartas de automóveis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="vendaSuaCota.html">Venda sua carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="faq.html">Perguntas Frequentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black" href="sobreNos.html">Sobre Nós</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div
+        style="background-image: url('img/backSobre.png');padding: 5px 0px 0px 0px;width: 100%;border-bottom: 2px solid gray">
+        <h1 style="text-align:center;color: #f9f9f9;font-weight: bold;font-family: poppins;font-size: 25px">CADASTRE UMA CARTA</h1>
+    </div>
+    <h2 class="preencha" style="color:#007baa;font-family: poppins; font-weight:bold;margin-top: 2%; text-align: center;">
+        Preencha o Formulário </h2>
+        <div class="container">
+        <div class="card mx-auto" style="background-color: transparent;">
+            <div class="card-body">
+                <form >
+                    <div class="form-row ">
+                        <div class="form-group col-md-12">
+                            <label class="formVendas" for="inputEmail4">Administradora</label>
+                            <input type="text" class="form-control"  id="inputEmail4" placeholder="Digite o nome da Administradora">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="inputAddress">Crédito R$</label>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">R$</span>
+                              
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="inputAddress">Entrada R$</label>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">R$</span>
+                              
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="inputAddress">Parcelas</label>
+                            <input type="text" class="form-control"  id="inputAddress" placeholder="">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="inputAddress">Próximo Vencimento</label>
+                            <input type="date" class="form-control"  id="inputAddress" placeholder="">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="status">Status</label>
+                            <select class="form-control" id="status">
+                                <option>Disponivel</option>
+                                <option>Reservada</option>
+                              </select>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4 col-lg-4">
+                            <label class="formVendas" for="status">Tipo de carta</label>
+                            <select class="form-control" id="status">
+                                <option>Imóvel</option>
+                                <option>Automóvel</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary center "
+                        style="width: 100%;background-color:#007baa;">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <img src="img/seta.png" id="seta"
+        style="cursor:pointer;display:none;z-index: 4;position: fixed;right: 10px; bottom: 10px;max-width: 40px">
+    <footer class="bg-dark" id="footer" style="position:fixed; bottom : 0; width: 100%;display:none">
+        <div class="text-center text-light" style="font-family: poppins">
+            Cristal Consórcios
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script>
+
+
+
+        $(document).ready(function () {
+
+
+            var cont = 0;
+
+            $('#seta').click(function () {
+                $(' html, body').animate({ 'scrollTop': 0 }, 500);
+            });
+
+            $(window).on("scroll", function () {
+
+                var scroll = $(this).scrollTop();
+
+                if (scroll < 100) {
+                    $('#footer').hide("slow")
+
+                }
+                if (scroll < 20) {
+                    $('.contatos').show()
+                    
+                }
+                if (scroll > 20) {
+                    $('.contatos').hide()
+                    
+                }
+                if (scroll > 100) {
+
+                    $('#footer').show("slow")
+
+
+                }
+                if (scroll >= 0 && scroll < 300) {
+
+                    $('#seta').hide("slow");
+
+                }
+                if (scroll >= 300) {
+                    cont++;
+                    $('#seta').show("slow").css({ 'opacity': 1 });
+
+                }
+
+            });
+
+        }); 
+    </script>
+
+
+
+
+    <script src="js/pooper.js">
+    </script>
+    <script src="js/bootstrap.js">
+    </script>
+</body>
+
+</html>

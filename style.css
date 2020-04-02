@@ -1,0 +1,964 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: poppins;
+}
+
+/*BARRA DE ROLAGEM*/
+::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007baa;
+}
+
+/*INDEX =============================================================================*/
+
+#navbarNav{
+  justify-content: space-evenly;
+}
+#logoCristal{
+  max-width: 40vw;
+}
+#seta{
+  cursor:pointer;
+  display:none;
+  position: fixed;
+  right: 10px; 
+  bottom: 30px;
+  max-width: 40px;
+}
+/* SESSAO 1 */
+.sessao1{
+  
+  background-image: url(img/intro-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.sessao1 h1{
+  margin-top: 30px;
+  font-size: 1.5em;
+  color:white;
+  font-weight: 600;
+}
+.sessao1 h1 span{
+  background-color: #007baa;
+  font-weight: 700;
+}
+.sessao1 h3{
+  position: relative;
+  margin-top: 1%;
+  font-size: 3em;
+  color:white;
+  font-weight: 800;
+  
+}
+
+.sessao1 h5{
+
+
+  font-size: 1.2em;
+  font-weight: 400;
+  color: white;
+}
+.sessao1 h5 span{
+  font-weight: 600;
+}
+
+.sessao1 .row button{
+  
+  margin-bottom: 5px;
+}
+
+
+.sessao1 button:hover {
+  transform: perspective(10cm) rotateX(-5deg) rotateY(5deg);
+}
+
+#resalva1{
+  
+  font-size:1em;
+  color: white;
+  display:block;
+}
+#resalva1 span{
+  background-color: #007baa;
+  font-size: 1em;
+  
+  font-weight: 600;
+}
+#resalva2{
+  font-size:0.9em;
+  color: white;
+  
+}
+#resalva2 a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
+/*SESSAO 2*/
+.sessao2{
+  
+}
+.sessao2 h1{
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-top:2%;
+}
+.sessao2 .sobreNos{
+  font-weight: 600;
+}
+
+.hrTelaGrande{
+  width: 100%;
+  background-color: black;
+  display: none;
+}
+.hrTelaPequena{
+  width: 100%;
+  background-color: black;
+  
+}
+.sessao2 h3{
+  font-size: 1em;
+}
+.sessao2 h5{
+  font-size: 0.8em;
+}
+
+#hrContatos{
+  width: 80%;
+  margin:5px auto;
+  background-color: lightgray;
+  display: none;
+}
+#contatos{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.logoWhats{
+  max-width: 5vw;
+}
+.spanWhats{
+  color:#46c656;
+  font-weight: bold;
+  
+}
+.divFone{
+  padding-top: 1%;
+  
+  color:black;
+}
+.logoTelefone{
+  max-width: 4vw;
+}
+.spanFone{
+  color:#007baa;
+  font-weight: bold;
+  
+}
+.divCelular{
+  
+  
+  color:black;
+}
+
+.logoCelular{
+  max-width: 15px;
+  
+}
+.spanCelular{
+  color:#007baa;
+  font-weight: bold;
+  
+}
+.divEmail{
+  margin-top: 5px;
+}
+.logoEmail{
+  max-width: 5vw;
+}
+.spanEmail{
+  color:#bf2546;
+  font-weight: bold;
+  
+  
+}
+.dados{
+  display:block;
+}
+.icone {
+  max-width: 10vw;
+  padding: 0 auto;
+}
+
+/*SESSAO 3*/
+.sessao3{
+  background-image: url(img/consorcio.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  color: white;
+}
+.sessao3 h2{
+  font-weight: 600;
+  font-size: 1;
+}
+.mapa {
+  max-width: 100%;
+  margin-top: 5%;
+}
+.btn{
+  width: 100%;
+}
+.btnEnviar{
+  background-color: #1778aa;
+  color:white;
+  margin-bottom: 10%;
+}
+
+#logoCristalSobreNos{
+  max-width: 50%;
+  margin-top: 8%;
+  display: none;
+}
+#pArrasteTabela{
+  font-size: 0.7em;
+  color:red;
+  text-align:center;
+}
+/*FOOTER*/
+
+#footer {
+  height: 1.5rem;
+  margin: 0;
+  position:fixed; 
+  bottom : 0; 
+  width: 100%;
+  display:none;
+  font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* tabelas */
+  #textoCotasAuto{
+    font-size: 17px;
+  }
+  .tabela{
+    font-size: 13px;
+  }
+ #bodyTable{
+   font-size:13px;
+ } 
+ /* FAQ */
+ .faq{
+  width: 100%;
+  font-size: 17px;
+}
+.textoFaq{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+/* VENDA SUA CARTA */
+.preencha{
+  font-size: 20px;
+}
+.formVendas{
+  font-size: 15px;
+}
+.form-control{
+  font-size: 15px;
+}
+.spanVenda{
+  font-size: 18px;
+}
+
+   /* SOBRE NÓS */
+    .introducao{
+    font-size: 18px;
+  }
+  #sobre{
+    font-size: 14px;
+  }
+}
+@media (min-width: 350px) and (max-width: 480px) {
+  .sessao1 h5{
+    margin-bottom: 5vh;
+  }
+  #resalva1{
+    margin-top: 17vh;
+    font-size:1em;
+    color: white;
+    display:block;
+  }
+  
+  .sessao2{
+     
+  }
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .sessao1 h1{
+    margin-top: 10vh;
+  }
+  #resalva1{
+    margin-top: 14vh;
+  }
+  /* tabelas */
+  #textoCotasAuto{
+    font-size: 20px;
+  }
+  
+  .tabela{
+    font-size: 13px;
+    
+  }
+ #bodyTable{
+   font-size:13px;
+ }
+ 
+   /* FAQ */
+   .faq{
+    width: 100%;
+    font-size: 17px;
+  }
+  .textoFaq{
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  
+  .icone{
+    max-width: 5vw;
+  }
+  .sessao2{
+    
+  }
+  .logoWhats{
+    max-width: 3vw;
+  }
+  .logoTelefone{
+    max-width: 2vw;
+  }
+  .logoEmail{
+    max-width: 3vw;
+  }
+  .sessao3{
+    
+  }
+  
+  
+}
+
+@media (min-width: 481px) and (max-width: 736px) and (orientation: landscape) {
+  #logoCristal{
+    max-width: 15vw;
+  }
+  
+  /* tabelas */
+  #textoCotasAuto{
+    font-size: 16px;
+  }
+
+  .tabela{
+    font-size: 13px;
+  }
+#bodyTable{
+  font-size:13px;
+}
+
+  /* FAQ */
+  .faq{
+   width: 100%;
+   font-size: 17px;
+ }
+ .textoFaq{
+   font-size: 17px;
+   margin-bottom: 10px;
+ }
+ /* VENDA SUA CARTA */
+.preencha{
+ font-size: 20px;
+}
+.formVendas{
+ font-size: 15px;
+}
+.form-control{
+ font-size: 15px;
+}
+.spanVenda{
+ font-size: 18px;
+}
+ }
+
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  #logoCristalSobreNos{
+  
+  }
+  #navbarNav{
+    font-size: 0.8em;
+  }
+  #logoCristal{
+    max-width: 20vw;
+  }
+  
+  .sessao1 h1{
+    margin-top: 10vh;
+    font-size: 2em;
+  }
+  .sessao1 h3{
+    font-size: 5em;
+  }
+  #resalva1{
+    margin-top: 10vh;
+  }
+  .sessao2{
+    
+  }
+  .sessao3{
+    
+  }
+  .logoWhats{
+    max-width: 3vw;
+  }
+  .logoTelefone{
+    max-width: 2vw;
+  }
+  .logoEmail{
+    max-width: 3vw;
+  }
+  .spanWhats{
+    font-size: 1em;
+  }
+  .spanFone{
+    font-size: 1em;
+  }
+  .spanEmail{
+    font-size: 1em;
+  }
+  .icone{
+    max-width: 5vw;
+  }
+  
+  
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #pArrasteTabela{
+    display:none;
+  }
+  #logoCristalSobreNos{
+    display: initial;
+    max-width: 60%;
+    margin-left: calc(50% - 30%);
+    margin-top: 0; 
+  }
+  #navbarNav{
+    font-size: 0.8em;
+  }
+  #logoCristal{
+    max-width: 15vw;
+  }
+  
+  .sessao1 h1{
+    margin-top: 40px;
+    font-size: 2em;
+  }
+  .sessao1 h5{
+    font-size: 2em;
+  }
+  #resalva1{
+    margin-top: 15vh;
+    font-size:1em;
+    color: white;
+    display:block;
+  }
+  #resalva1 span{
+    background-color: #007baa;
+    font-size: 1em;
+    
+    font-weight: 600;
+  }
+  #resalva2{
+    font-size:1em;
+    color: white;
+    
+  }
+  #resalva2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+  } 
+  .botoesHome{
+    margin-top: 5vh;
+    font-weight: bold;
+  }
+  .sessao2{
+    
+  }
+  .icone{
+    max-width: 3vw;
+  }
+  .hrTelaPequena{
+    display:none;
+  }
+  .hrTelaGrande{
+    display: inherit;
+  }
+  .sessao2 h3{
+    font-size: 1.5em;
+  }
+  .sessao2 h5{
+    font-size: 1em;
+  }
+
+  .logoWhats{
+    max-width: 3vw;
+    display:none;
+  }
+  .logoTelefone{
+    max-width: 2vw;
+    display:none;
+  }
+  .logoEmail{
+    max-width: 3vw;
+    display:none;
+  }
+  .sessao3{
+    
+  }
+  
+}
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #pArrasteTabela{
+    display:none;
+  }
+  #logoCristalSobreNos{
+    display: initial;
+    max-width: 100%;
+  }
+  #navbarNav{
+    font-size: 0.8em;
+  }
+  #logoCristal{
+    max-width: 15vw;
+  }
+  .hrTelaPequena{
+    display:none;
+  }
+  .hrTelaGrande{
+    display: inherit;
+  }
+  .logoWhats{
+    max-width: 1.5vw;
+
+  }
+  .logoTelefone{
+    max-width: 1.3vw;
+
+  }
+  .logoEmail{
+    max-width: 1.5vw;
+
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape){
+  #pArrasteTabela{
+    display:none;
+  }
+  .navbarNav{
+    font-size: 1.5em;
+  }
+  .sessao1{
+    height: 100vh;
+  }
+  .sessao1 h1{
+    font-size: 2em;
+    margin-top: 25vh;
+  }
+  .sessao1 h3{
+    font-size: 4em;
+  }
+  .sessao1 h5{
+    margin-top: 10vh;
+  }
+  #resalva1{
+    margin-top: 15vh;
+    font-size: 1.5em;
+  }
+  #resalva2{
+    font-size: 1.5em;
+  }
+  #logoCristalSobreNos{
+    display: initial;
+    max-width: 100%;
+  }
+  #navbarNav{
+    font-size: 0.8em;
+  }
+  #logoCristal{
+    max-width: 15vw;
+  }
+  .hrTelaPequena{
+    display:none;
+  }
+  .hrTelaGrande{
+    display: inherit;
+  }
+  .logoWhats{
+    max-width: 1.5vw;
+
+  }
+  .logoTelefone{
+    max-width: 1.3vw;
+
+  }
+  .logoEmail{
+    max-width: 1.5vw;
+
+  }
+  .icone{
+    max-width: 3vw;
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1919px){
+  #pArrasteTabela{
+    display:none;
+  }
+  #logoCristalSobreNos{
+    display: initial;
+    max-width: 100%;
+  }
+  #logoCristal{
+    max-width: 15vw;
+  }
+  
+  .sessao1 h1{
+    margin-top: 20vh;
+    font-size: 2.3em;
+  }
+  .sessao1 h3{
+    font-weight: 600;
+    font-size: 3em;
+  }
+  
+  #resalva1{
+    font-size: 1.2em;
+    margin-top: 25vh;
+  }
+  #resalva2{
+    font-size: 1.2em;
+  }
+  .sessao2{
+    
+  }
+  .icone{
+    max-width: 2vw;
+  }
+  .hrTelaPequena{
+    display:none;
+  }
+  .hrTelaGrande{
+    display: inherit;
+  }
+  .logoWhats{
+    max-width: 1.5vw;
+
+  }
+  .logoTelefone{
+    max-width: 1.3vw;
+
+  }
+  .logoEmail{
+    max-width: 1.5vw;
+
+  }
+  .sessao3{
+    
+  }
+  .mapa{
+    max-width: 30vw;
+  }
+
+}
+@media (min-width: 1920px){
+  #pArrasteTabela{
+    display:none;
+  }
+  #logoCristalSobreNos{
+    display: initial;
+    max-width: 100%;
+  }
+  #logoCristal{
+    max-width: 15vw;
+  }
+  .navbar-nav{
+    font-size: 1.5em !important;
+  }
+  .sessao1{
+    height: 100vh;
+  }
+  .sessao1 h1{
+    margin-top: 20vh;
+    font-size: 2.8em;
+  }
+  .sessao1 h5{
+    font-size: 2em;
+    margin-top: 10vh;
+  }
+  .sessao1 h3{
+    font-weight: 700;
+    font-size: 5em;
+  }
+  
+  #resalva1{
+    font-size: 1.5em;
+    margin-top: 25vh;
+  }
+  #resalva2{
+    font-size: 1.5em;
+  }
+  .sessao2{
+    
+  }
+  .icone{
+    max-width: 2vw;
+  }
+  .hrTelaPequena{
+    display:none;
+  }
+  .hrTelaGrande{
+    display: inherit;
+  }
+  .logoWhats{
+    max-width: 1.5vw;
+
+  }
+  .logoTelefone{
+    max-width: 1.3vw;
+
+  }
+  .logoEmail{
+    max-width: 1.5vw;
+
+  }
+  .sessao3{
+    
+  }
+  .mapa{
+    max-width: 20vw;
+  }
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMACOES ===============================*/
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1
+  }
+}
+
+.scale-out-center {
+  -webkit-animation: scale-out-center .5s cubic-bezier(.55, .085, .68, .53) both;
+  animation: scale-out-center .5s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-bottom 1s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@-webkit-keyframes slide-in-bottom2 {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-bottom2 {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.slide-in-bottom2 {
+  -webkit-animation: slide-in-bottom2 1s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-bottom2 1s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1
+  }
+}
+
+.scale-out-center {
+  -webkit-animation: scale-out-center .5s cubic-bezier(.55, .085, .68, .53) both;
+  animation: scale-out-center .5s cubic-bezier(.55, .085, .68, .53) both
+}
